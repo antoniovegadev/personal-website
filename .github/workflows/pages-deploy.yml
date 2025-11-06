@@ -68,5 +68,6 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # IMPORTANT: `_site` is Jekyll's output folder
           command: pages deploy _site --project-name=antoniovega
